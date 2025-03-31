@@ -28,7 +28,7 @@ canvas.addEventListener('click', function(event) {
 
 function drawShapes() {
     ctx.strokeStyle = 'white';
-    ctx.lineWidth = 3;
+    ctx.lineWidth = 5;
 
     // Kreslenie prázdneho kruhu
     ctx.beginPath();
