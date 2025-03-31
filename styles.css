@@ -1,0 +1,59 @@
+canvas {
+    border: 3px solid black;
+}
+
+.color-picker {
+    margin: 10px;
+}
+
+.color-button {
+    width: 50px;
+    height: 50px;
+    border: none;
+    margin: 20px;
+    cursor: pointer;
+    transition: transform 0.2s;
+}
+
+.red {
+    background-color: red;
+}
+
+.blue {
+    background-color: blue;
+}
+
+.yellow {
+    background-color: yellow;
+}
+
+.orange {
+    background-color: orange;
+}
+
+.green {
+    background-color: green;
+}
+
+.purple {
+    background-color: purple;
+}
+
+.magenta {
+    background-color: magenta;
+}
+.color-picker {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.color-button {
+    width: 50px;
+    height: 50px;
+    border: none;
+    margin: 20px;
+    cursor: pointer;
+    transition: transform 0.2s;
+}
