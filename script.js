@@ -13,7 +13,7 @@ canvas.height = 1080;
 
 // Načítanie obrázka
 const backgroundImage = new Image();
-backgroundImage.src = '	https://assets.onecompiler.app/43cyhdz9z/43cyhdgu2/Dizajn%20bez%20na%CC%81zvu%20(6).png'; // Uisti sa, že cesta k obrázku je správna
+backgroundImage.src = 'https://assets.onecompiler.app/43cyhdz9z/43cyhdgu2/Dizajn%20bez%20na%CC%81zvu%20(7).png'; // Uisti sa, že cesta k obrázku je správna
 
 backgroundImage.onload = function() {
     ctx.drawImage(backgroundImage, 0, 0, canvas.width, canvas.height);
