@@ -37,7 +37,7 @@ function drawShapes() {
 
     // Kreslenie prázdneho obdĺžnika
     ctx.beginPath();
-    ctx.rect(384, 54, 200, 160);
+    ctx.rect(354, 54, 250, 160);
     ctx.stroke();
 
     // Kreslenie prázdneho štvorca
@@ -120,9 +120,9 @@ function fillShape(x, y) {
     }
 
     // Vyplnenie obdĺžnika
-    if (x >= 384 && x <= 584 && y >= 54 && y <= 214) {
+    if (x >= 354 && x <= 604 && y >= 54 && y <= 214) {
         ctx.beginPath();
-        ctx.rect(384, 54, 200, 160);
+        ctx.rect(354, 54, 250, 160);
         ctx.fill();
     }
 
