@@ -9,11 +9,11 @@ const ctx = canvas.getContext('2d');
 
 // Nastavenie veľkosti plátna na 1920 x 1080
 canvas.width = 1920;
-canvas.height = 1080;
+canvas.height = 780;
 
 // Načítanie obrázka
 const backgroundImage = new Image();
-backgroundImage.src = 'https://assets.onecompiler.app/43cyhdz9z/43cyhdgu2/Dizajn%20bez%20na%CC%81zvu%20(7).png'; // Uisti sa, že cesta k obrázku je správna
+backgroundImage.src = 'https://assets.onecompiler.app/43cyhdz9z/43cyhdgu2/Dizajn%20bez%20na%CC%81zvu%20(8).png'; // Uisti sa, že cesta k obrázku je správna
 
 backgroundImage.onload = function() {
     ctx.drawImage(backgroundImage, 0, 0, canvas.width, canvas.height);
@@ -28,7 +28,7 @@ canvas.addEventListener('click', function(event) {
 
 function drawShapes() {
     ctx.strokeStyle = 'white';
-    ctx.lineWidth = 7;
+    ctx.lineWidth = 6;
 
     // Kreslenie prázdneho kruhu
     ctx.beginPath();
@@ -55,22 +55,22 @@ function drawShapes() {
 
     // Kreslenie ďalších trojuholníkov
     ctx.beginPath();
-    ctx.moveTo(288, 864);
-    ctx.lineTo(576, 972);
-    ctx.lineTo(384, 972);
+    ctx.moveTo(288, 564);
+    ctx.lineTo(576, 680);
+    ctx.lineTo(384, 680);
     ctx.closePath();
     ctx.stroke();
 
     ctx.beginPath();
-    ctx.moveTo(1600, 864);
-    ctx.lineTo(1200, 864);
-    ctx.lineTo(1248, 972);
+    ctx.moveTo(1550, 564);
+    ctx.lineTo(1300, 564);
+    ctx.lineTo(1348, 680);
     ctx.closePath();
     ctx.stroke();
 
     // Kreslenie ďalších štvorcov
     ctx.beginPath();
-    ctx.rect(96, 864, 120, 120);
+    ctx.rect(96, 564, 120, 120);
     ctx.stroke();
 
     ctx.beginPath();
@@ -79,16 +79,16 @@ function drawShapes() {
 
     // Kreslenie ďalších obdĺžnikov
     ctx.beginPath();
-    ctx.rect(672, 864, 240, 120);
+    ctx.rect(672, 564, 240, 120);
     ctx.stroke();
 
     ctx.beginPath();
-    ctx.rect(1632, 702, 160, 240);
+    ctx.rect(1632, 502, 160, 240);
     ctx.stroke();
 
     // Kreslenie ďalších kruhov
     ctx.beginPath();
-    ctx.arc(1056, 864, 100, 0, 2 * Math.PI);
+    ctx.arc(1106, 600, 100, 0, 2 * Math.PI);
     ctx.stroke();
 
     ctx.beginPath();
@@ -107,9 +107,9 @@ function fillShape(x, y) {
     }
 
     // Vyplnenie ďalších kruhov
-    if (ctx.isPointInPath(new Path2D('M 1056 864 m -100, 0 a 100,100 0 1,0 200,0 a 100,100 0 1,0 -200,0'), x, y)) {
+    if (ctx.isPointInPath(new Path2D('M 1106 600 m -100, 0 a 100,100 0 1,0 200,0 a 100,100 0 1,0 -200,0'), x, y)) {
         ctx.beginPath();
-        ctx.arc(1056, 864, 100, 0, 2 * Math.PI);
+        ctx.arc(1106, 600, 100, 0, 2 * Math.PI);
         ctx.fill();
     }
 
@@ -127,15 +127,15 @@ function fillShape(x, y) {
     }
 
     // Vyplnenie ďalších obdĺžnikov
-    if (x >= 672 && x <= 912 && y >= 864 && y <= 984) {
+    if (x >= 672 && x <= 912 && y >= 564 && y <= 684) {
         ctx.beginPath();
-        ctx.rect(672, 864, 240, 120);
+        ctx.rect(672, 564, 240, 120);
         ctx.fill();
     }
 
-    if (x >= 1632 && x <= 1792 && y >= 702 && y <= 942) {
+    if (x >= 1632 && x <= 1792 && y >= 502 && y <= 742) {
         ctx.beginPath();
-        ctx.rect(1632, 702, 160, 240);
+        ctx.rect(1632, 502, 160, 240);
         ctx.fill();
     }
 
@@ -147,9 +147,9 @@ function fillShape(x, y) {
     }
 
     // Vyplnenie ďalších štvorcov
-    if (x >= 96 && x <= 216 && y >= 864 && y <= 984) {
+    if (x >= 96 && x <= 216 && y >= 564 && y <= 684) {
         ctx.beginPath();
-        ctx.rect(96, 864, 120, 120);
+        ctx.rect(96, 564, 120, 120);
         ctx.fill();
     }
 
@@ -170,20 +170,20 @@ function fillShape(x, y) {
     }
 
     // Vyplnenie ďalších trojuholníkov
-    if (ctx.isPointInPath(new Path2D('M 288 864 L 576 972 L 384 972 Z'), x, y)) {
+    if (ctx.isPointInPath(new Path2D('M 288 564 L 576 680 L 384 680 Z'), x, y)) {
         ctx.beginPath();
-        ctx.moveTo(288, 864);
-        ctx.lineTo(576, 972);
-        ctx.lineTo(384, 972);
+        ctx.moveTo(288, 564);
+        ctx.lineTo(576, 680);
+        ctx.lineTo(384, 680);
         ctx.closePath();
         ctx.fill();
     }
 
-    if (ctx.isPointInPath(new Path2D('M 1600 864 L 1200 864 L 1248 972 Z'), x, y)) {
+    if (ctx.isPointInPath(new Path2D('M 1550 564 L 1300 564 L 1348 680 Z'), x, y)) {
         ctx.beginPath();
-        ctx.moveTo(1600, 864);
-        ctx.lineTo(1200, 864);
-        ctx.lineTo(1248, 972);
+        ctx.moveTo(1550, 564);
+        ctx.lineTo(1300, 564);
+        ctx.lineTo(1348, 680);
         ctx.closePath();
         ctx.fill();
     }
